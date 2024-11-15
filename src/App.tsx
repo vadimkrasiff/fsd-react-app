@@ -1,12 +1,7 @@
 import "./App.css";
-import { TaskList } from "./task";
 
 function App() {
-  return (
-    <>
-      <TaskList />
-    </>
-  );
+  return <></>;
 }
 
 export default App;
