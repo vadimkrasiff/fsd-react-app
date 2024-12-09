@@ -10,10 +10,10 @@ export function UsersPage() {
 
   const getUserActions = (user: User) => {
     return (
-      <>
+      <div className="h-full flex items-center gap-2">
         {isUserSignIn(user) ? <SignOutButton /> : <SignInButton user={user} />}
         <RemoveUserButton userId={user.id} />
-      </>
+      </div>
     );
   };
 

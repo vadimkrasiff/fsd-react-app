@@ -1,6 +1,8 @@
+import { ThemeProvider } from "@mui/material";
 import { AppLoader } from "./app-loader";
 import { AppRouter } from "./app-router";
 import "./App.css";
+import { theme } from "./mui-localization";
 
 export type CreateUserFormData = {
   name: string;
@@ -8,9 +10,11 @@ export type CreateUserFormData = {
 };
 function App() {
   return (
-    <AppLoader>
-      <AppRouter />
-    </AppLoader>
+    <ThemeProvider theme={theme}>
+      <AppLoader>
+        <AppRouter />
+      </AppLoader>
+    </ThemeProvider>
   );
 }
 

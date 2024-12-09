@@ -10,7 +10,7 @@ type BoardStore = {
   saveBoard: (value: Board) => Promise<void>;
 };
 
-export const createBoardStore = ({ boardId }: { boardId: string }) => {
+export const createBoardStore = ({ boardId }: { boardId?: string }) => {
   return create<BoardStore>((set) => ({
     board: undefined,
     error: undefined,

@@ -42,10 +42,10 @@ export function UIImageSelect<T extends string | number>({
           },
         }}
         renderValue={(value) => {
-          console.log(value);
           if (!value) {
             return <em>{placeholder}</em>;
           }
+
           if (Array.isArray(value)) {
             return (
               <div className="flex">
